@@ -1,0 +1,38 @@
+.word_list__item {
+    font-size: 20px;
+    padding-bottom: 40px;
+    background-color: rgb(30, 30, 30);
+    border-bottom: 2px solid black;
+}
+.word_list__item:hover {
+    background-color: rgb(55, 55, 61);
+}
+
+.word_list {
+    color: blanchedalmond;
+    padding: 0px;
+    margin-left: 15%;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+}
+body {
+    margin: 0 auto;
+}
+
+/* украл */
+.nav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(58, 58, 58);
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.word_form
+{
+    color: blanchedalmond;
+    background-color:darkslateblue;
+}

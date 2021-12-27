@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> {{PAGE_NAME}} - {{ SITE_NAME }}</title>
+        <link type="text/css" rel="stylesheet" href="{% static 'learnwords/css/style.css' %}">
+    </head>
+    <body>
+        {% include "./navbar.html" %}
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

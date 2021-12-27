@@ -1,0 +1,19 @@
+{% extends 'learnwords/base.html' %}
+{% block body %}
+<div class='word_list'>
+<ul>
+        <form method="POST" class="form_el"> {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Добавить">
+        </form>
+    {% for wrd in words %}
+    <li class="word_list__item">
+        <b>{{wrd.first_language}}</b> - {{wrd.second_language}}
+    </li>
+    {% if wrd.image != '' %}
+        <img class="word_img" src="{{wrd.image}}" alt="#">
+    {% endif %}
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}
